@@ -1,5 +1,16 @@
 /* styles.css */
 
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #f2711c, #f2b139);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* Estilos para el modo oscuro */
 body {
     background-color: #121212;
@@ -7,5 +18,10 @@ body {
 }
 
 header {
-    background-color: #1e1e1e;
+    background-color: #121212;
 }
+
+.p-green {
+    color:green;
+}
+
