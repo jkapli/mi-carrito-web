@@ -21,7 +21,17 @@ header {
     background-color: #121212;
 }
 
+footer {
+    background-color: darkgray;
+}
+
 .p-green {
     color:green;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
 }
 
