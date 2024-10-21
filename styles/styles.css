@@ -13,12 +13,12 @@ h1 {
 
 /* Estilos para el modo oscuro */
 body {
-    background-color: #121212;
+    background-color: #09484f;
     color: #ffffff;
 }
 
 header {
-    background-color: #121212;
+    background-color: #09484f;
 }
 
 footer {
@@ -60,3 +60,4 @@ ul {
     align-content: center;
     
 }
+
