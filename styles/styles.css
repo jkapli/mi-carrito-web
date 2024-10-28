@@ -196,17 +196,25 @@ border: 1px solid #ccc;
 
 
   @media only screen and (min-width: 768px){
-    .formulario {
-      width: 50%;
-      margin: 0 auto;
+    .contact-container {
+      width: 100vh;
+      margin-left: 10px;
     }
   }
 
 .contact-container{
   display: grid;
-  grid-template: 100px 100px;
-  grid-template-areas: "left rigth";
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "left right";
+  grid-gap: 30px;
+}
+
+.left {
+  grid-area: left
+}
+.rigth{
+  grid-area: right
 }
 
 .item {
