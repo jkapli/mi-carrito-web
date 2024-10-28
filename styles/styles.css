@@ -61,6 +61,10 @@ ul {
     text-decoration: none;
   }
 
+  .card:hover {
+    border-color: #f2711c;
+    transform: translateY(-5px);
+  }
 .container {
     display: inline-flex;
     flex-wrap: wrap;
@@ -69,6 +73,7 @@ ul {
     align-content: center;
     
 }
+
 
 nav {
      padding: 20px;
