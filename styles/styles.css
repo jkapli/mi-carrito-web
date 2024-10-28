@@ -188,3 +188,28 @@ border: 1px solid #ccc;
   .container-grid .card-resena:hover {
     transform: translateY(-5px);
   }
+
+
+  @media only screen and (min-width: 768px){
+    .formulario {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+.contact-container{
+  display: grid;
+  grid-template: 100px 100px;
+  grid-template-areas: "left rigth";
+  grid-gap: 20px;
+}
+
+.item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  margin-left: 10px;
+  align-items: center;
+}

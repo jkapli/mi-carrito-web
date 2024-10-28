@@ -27,34 +27,39 @@
         </nav>
     </header>
     <main>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26302.287574779217!2d-58.517508430236816!3d-34.50831054501708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter!5e0!3m2!1ses-419!2sar!4v1729533346716!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section>
-            <h3> Formulario de contacto </h3>
-            <!-- <form>
-                <label for="firstname">Nombre: </label>
-                <input size="30" type="text" name="firstname" id="firstname">
-                <br><br>
-                <input type="submit" value="Enviar datos">
-            </form> -->
-            <form action="https://formspree.io/<USER_ID>" method="POST">
-                <label for="firstname">Nombre: </label>
-                <input size="30" type="text" name="firstname" id="firstname">
-                <br><br>
-                <label for="lastname">Apellido: </label>
-                <input size="30" type="text" name="lastname" id="lastname">
-                <br><br>
-                <label for="textarea">Texto: </label>
-                <textarea name="textarea" id="textarea"></textarea>
-                <br><br>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email">
-                <br><br>
-                <input type="submit" value="Send">
-              </form>
-              
-        </section>
+        <div class="contact-container">
+            <section>
+                <div class="item right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26302.287574779217!2d-58.517508430236816!3d-34.50831054501708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter!5e0!3m2!1ses-419!2sar!4v1729533346716!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <div class="item left">
+                <section class="formulario">
+                    <h3> Formulario de contacto </h3>
+                    <!-- <form>
+                        <label for="firstname">Nombre: </label>
+                        <input size="30" type="text" name="firstname" id="firstname">
+                        <br><br>
+                        <input type="submit" value="Enviar datos">
+                    </form> -->
+                    <form action="https://formspree.io/<USER_ID>" method="POST">
+                        <label for="firstname">Nombre: </label>
+                        <input size="30" type="text" name="firstname" id="firstname">
+                        <br><br>
+                        <label for="lastname">Apellido: </label>
+                        <input size="30" type="text" name="lastname" id="lastname">
+                        <br><br>
+                        <label for="textarea">Texto: </label>
+                        <textarea name="textarea" id="textarea"></textarea>
+                        <br><br>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <p> Pie de pagina </p>
