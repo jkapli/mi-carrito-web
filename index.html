@@ -16,13 +16,13 @@
         <nav>
             <ul>
                 <li><p><a href="index.html"><img src="img/home.png" alt="Home" class="nav-icons"> Inicio </a></p></li>
-                <li><p><a href="productos.html">
+                <li><p><a href="#productos">
                     <img src="img/topic.png" alt="Home" class="nav-icons">
                     Productos </a></li>
-                <li><p><a href="resena.html">
+                <li><p><a href="#resena">
                     <img src="img/data.png" alt="Home" class="nav-icons">
                      Reseñas </a></li>
-                <li><p><a href="contacto.html">
+                <li><p><a href="#contacto">
                     <img src="img/contact.png" alt="Home" class="nav-icons">
                     Contacto </a></li>
             </ul>
@@ -30,7 +30,7 @@
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="banner">
             <img src="img/banner.jpg"alt="Banner">
             <p>COLECCION PRIMAVERA - VERANO</p>
         </section>
@@ -97,6 +97,78 @@
 
             </div>
     
+        </section>
+
+        <section id="productos">
+                <div style='background-image: url("img/fondo_gris.jpg");'>
+                    Div con imagen
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure natus, voluptas assumenda error dignissimos quasi incidunt quia doloribus recusandae nisi pariatur aliquam soluta asperiores quibusdam et ducimus praesentium beatae?
+                    </p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure natus, voluptas assumenda error dignissimos quasi incidunt quia doloribus recusandae nisi pariatur aliquam soluta asperiores quibusdam et ducimus praesentium beatae?
+                    </p>
+                </div>
+        </section>
+        <section id="resena">
+                <div class="container-grid">
+                    <div class="card-resena">
+                        <img src="img/face-icon.png" width="100" alt="Tarjeta 1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, expedita! Reiciendis sequi quas repellat esse quis amet perspiciatis, sint odit distinctio autem assumenda omnis, nobis cupiditate reprehenderit ut voluptas. Ex.</p>
+                        <h2> Clark Kent </h2>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+
+                    <div class="card-resena">
+                        <img src="img/girl-face-icon.png" width="100" alt="Tarjeta 1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab vitae quibusdam laboriosam assumenda minus. Nostrum ea quia aliquam a nobis aliquid sint dolorum quo, quaerat quasi voluptas illum modi incidunt!</p>
+                        <h2> Marta Martinez </h2>
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                    </div>
+
+                    <div class="card-resena">
+                        <img src="img/face-icon.png" width="100" alt="Tarjeta 1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas voluptates possimus ipsum quaerat, assumenda iure, minus, eos corporis nostrum dolorem ullam eligendi distinctio. Molestias, corrupti. Quod cum cumque ut.</p>
+                        <h2> Carlos Perez </h2>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    
+                    </div>
+                </div>
+        </section>
+
+        <section id="contacto">
+                <div class="contact-container">
+                    <section>
+                        <div class="item right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26302.287574779217!2d-58.517508430236816!3d-34.50831054501708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter!5e0!3m2!1ses-419!2sar!4v1729533346716!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </section>
+                    <div class="item left">
+                        <section class="formulario">
+                            <h3> Formulario de contacto </h3>
+                            <!-- <form>
+                                <label for="firstname">Nombre: </label>
+                                <input size="30" type="text" name="firstname" id="firstname">
+                                <br><br>
+                                <input type="submit" value="Enviar datos">
+                            </form> -->
+                            <form action="https://formspree.io/f/xwpkvazy" method="POST">
+                                <label for="firstname">Nombre: </label>
+                                <input size="30" type="text" name="firstname" id="firstname">
+                                <br><br>
+                                <label for="lastname">Apellido: </label>
+                                <input size="30" type="text" name="lastname" id="lastname">
+                                <br><br>
+                                <label for="textarea">Texto: </label>
+                                <textarea name="textarea" id="textarea"></textarea>
+                                <br><br>
+                                <label for="email">Email: </label>
+                                <input type="email" id="email" name="email">
+                                <br><br>
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </section>
+                    </div>
+                </div>
         </section>
     </main>
     <hr>
