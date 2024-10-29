@@ -1,7 +1,9 @@
 /* styles.css */
 
 
-/* CSS RESET  */
+/* ==================================================================================================== */
+                                              /* CSS RESET  */
+/* ==================================================================================================== */
 
 * {
   font-family: "Nunito", sans-serif;
@@ -12,6 +14,63 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* ==================================================================================================== */
+                                                /* NAVBAR  */
+/* ==================================================================================================== */
+ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  nav {
+    padding: 20px;
+ }
+
+ nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ nav li {
+   margin: 0 10px;
+ }
+ 
+ nav a {
+   text-decoration: none;
+   color: #e3eef1;
+   font-size: 1em;
+ }
+
+ nav a:hover {
+   transform: translateY(-5px);
+   color: #f2711c;
+   border-color: #f2b139;
+ }
+
+ .nav-logo {
+   width: 50px;
+   height: 50px;
+   align-items: center;
+   justify-content: left;
+}
+
+ .nav-icons {
+   width: 20px;
+   height: 20px;
+   align-items: center;
+   justify-content: left;
+ }
+
+
+}
+
+/* ==================================================================================================== */
+                                    /* ETIQUETAS GENERALES  */
+/* ==================================================================================================== */
 
 
 h1 {
@@ -36,11 +95,24 @@ header {
     justify-content: space-between;
 }
 
-ul {
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
+
+hr {
+  border: 1px solid #ccc;
+  }
+/* ==================================================================================================== */
+                                              /* CARDS  */
+/* ==================================================================================================== */
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
 }
+
 .card {
     /* background-color: ; */
     border: 1px solid #ccc;
@@ -67,9 +139,9 @@ ul {
     border-color: #f2711c;
     transform: translateY(-5px);
   }
-
-  
-
+/* ==================================================================================================== */
+                                        /* SECCION TITLE  */
+/* ==================================================================================================== */
 .section-title {
     text-align: center;
     padding-top: 10px;
@@ -79,66 +151,9 @@ ul {
     background-color:#49787e;
     margin-top: 50px;
 }
-
-  .container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
-
-
-nav {
-     padding: 20px;
-  }
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #e3eef1;
-    font-size: 1em;
-  }
-
-  nav a:hover {
-    transform: translateY(-5px);
-    color: #f2711c;
-    border-color: #f2b139;
-  }
-
-  .nav-logo {
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: left;
-}
-
-  .nav-icons {
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    justify-content: left;
-  }
-
-
-hr {
-border: 1px solid #ccc;
-}
-
+/* ==================================================================================================== */
+                                          /* FOOTER  */
+/* ==================================================================================================== */
 .footer-container {
     display: inline-flex;
     justify-content: space-around;
@@ -158,7 +173,9 @@ border: 1px solid #ccc;
     height: 40px;
     object-fit: cover;
 }
-
+/* ==================================================================================================== */
+                                              /* BANNER  */
+/* ==================================================================================================== */
 .banner {
     position: relative;
     margin: 0;
@@ -172,7 +189,7 @@ border: 1px solid #ccc;
     transition: transform 0.5s ease-in-out;
 }
 
-  .banner p {
+.banner p {
     position: absolute; 
     top: 50%; /* Centra verticalmente el texto */
     left: 50%; /* Centra horizontalmente el texto */
@@ -184,11 +201,11 @@ border: 1px solid #ccc;
     padding: 10px 20px; /* Espaciado interno del texto */
   }
 
-  @media (max-width: 768px) {
-    .banner p {
-        font-size: 20px; /* Ajusta el tamaño de la fuente para pantallas medianas */
-        padding: 8px 16px; /* Ajusta el padding para pantallas medianas */
-    }
+@media (max-width: 768px) {
+  .banner p {
+      font-size: 20px; /* Ajusta el tamaño de la fuente para pantallas medianas */
+      padding: 8px 16px; /* Ajusta el padding para pantallas medianas */
+  }
 }
 
 @media (max-width: 480px) {
@@ -197,7 +214,9 @@ border: 1px solid #ccc;
         padding: 6px 12px; /* Ajusta el padding para pantallas pequeñas */
     }
 }
-
+/* ==================================================================================================== */
+                                            /* RESEÑA  */
+/* ==================================================================================================== */
   .container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -235,6 +254,9 @@ border: 1px solid #ccc;
     border-color: #f2b139;
   }
 
+/* ==================================================================================================== */
+                                            /* CONTACT  */
+/* ==================================================================================================== */
 
   @media (max-width: 768px){
     .contact-container {
@@ -293,3 +315,8 @@ border: 1px solid #ccc;
   margin-left: 10px;
   align-items: center;
 }
+
+
+/* ==================================================================================================== */
+                                            /* FORMULARIO  */
+/* ==================================================================================================== */
