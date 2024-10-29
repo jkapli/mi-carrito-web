@@ -29,7 +29,6 @@
   }
 }
 
-
 ul {
   list-style: none;
   text-decoration: none;
@@ -298,16 +297,16 @@ hr {
   
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: 
   "left right";
   grid-gap: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
-  
 }
 
 .left {
-  grid-area: left
+  grid-area: left;
 }
 .rigth{
   grid-area: right;
@@ -332,3 +331,9 @@ hr {
 /* ==================================================================================================== */
                                             /* FORMULARIO  */
 /* ==================================================================================================== */
+
+.formulario label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
