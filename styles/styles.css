@@ -69,20 +69,11 @@ ul {
   }
 
   
-  .container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: black;
-}
+
 .section-title {
     text-align: center;
     font-size: 1rem;
-    background-color: black;
+    background-color:#49787e;
     margin-top: 50px;
 }
 
@@ -94,7 +85,7 @@ ul {
     align-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: black;
+    
 }
 
 nav {
