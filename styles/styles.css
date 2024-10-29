@@ -111,7 +111,13 @@ nav {
   nav a {
     text-decoration: none;
     color: #e3eef1;
-   font-size: 1em;
+    font-size: 1em;
+  }
+
+  nav a:hover {
+    transform: translateY(-5px);
+    color: #f2711c;
+    border-color: #f2b139;
   }
 
   .nav-logo {
