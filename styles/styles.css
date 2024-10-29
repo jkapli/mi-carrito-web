@@ -26,6 +26,7 @@ ul {
   nav {
     padding: 20px;
  }
+}
 
  nav ul {
    list-style: none;
@@ -65,8 +66,6 @@ ul {
    justify-content: left;
  }
 
-
-}
 
 /* ==================================================================================================== */
                                     /* ETIQUETAS GENERALES  */
