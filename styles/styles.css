@@ -9,16 +9,30 @@
   font-optical-sizing: auto;
   font-weight: 10px;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+.welcome {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: darkgray;
+  text-align: justify;
+  background: linear-gradient(to right, #383432, #e9dcd2);
+  
+}
+
 
 h1 {
     text-align: center;
-    /* font-family: 'Montserrat', sans-serif; */
     font-size: 4rem;
     background-image: linear-gradient(to right, #f2711c, #f2b139);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 /* Estilos para el modo oscuro */
@@ -138,12 +152,11 @@ border: 1px solid #ccc;
 
 .banner img
 {
-    width: 95%;
-    height: 300px;
+    width: 100%;
+    height: 600px;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
-
 
   .banner p {
     position: absolute; 
@@ -158,6 +171,7 @@ border: 1px solid #ccc;
   }
 
   .container-grid {
+    background-color: darkolivegreen;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: auto;
@@ -203,6 +217,7 @@ border: 1px solid #ccc;
   }
 
 .contact-container{
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
