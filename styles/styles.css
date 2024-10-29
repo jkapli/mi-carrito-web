@@ -1,8 +1,7 @@
 /* styles.css */
 
 
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 1000 */
+/* CSS RESET  */
 
 * {
   font-family: "Nunito", sans-serif;
@@ -12,17 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-.welcome {
-  font-size: 2rem;
-  font-weight: 700;
-  font-style: italic;
-  color: darkgray;
-  text-align: justify;
-  background: linear-gradient(to right, #383432, #e9dcd2);
-  
 }
 
 
@@ -85,9 +73,9 @@ ul {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
 
 nav {
      padding: 20px;
@@ -179,6 +167,8 @@ border: 1px solid #ccc;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .card-resena{
@@ -223,6 +213,8 @@ border: 1px solid #ccc;
   grid-template-areas: 
   "left right";
   grid-gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .left {
