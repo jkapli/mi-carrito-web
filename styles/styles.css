@@ -8,7 +8,7 @@
 * {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 10px;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -95,12 +95,12 @@ h1 {
 
 /* Estilos para el modo oscuro */
 body {
-    background-color: #121212;
+    background-color: #30262b;
     color: #ffffff;
 }
 
 header {
-    background-color: #121212;
+    background-color: #30262b;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,6 +110,20 @@ header {
 hr {
   border: 1px solid #ccc;
   }
+
+  textarea {
+    background-color: white;
+    border: 2px green;
+    width: 100%;
+    height: 9rem;
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    resize: none;
+}
+
 /* ==================================================================================================== */
                                               /* CARDS  */
 /* ==================================================================================================== */
@@ -155,11 +169,11 @@ hr {
 /* ==================================================================================================== */
 .section-title {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0.5em;
     align-items: center;
-    font-size: 1rem;
-    height: 50px;
-    background-color:#49787e;
+    font-size: 2rem;
+    height: 100px;
+    background: linear-gradient(to right, #d8b0cc, #7a7278);
     margin-top: 50px;
 }
 /* ==================================================================================================== */
@@ -171,6 +185,8 @@ hr {
     flex-wrap: wrap;
     align-content: flex-start;
     padding-left: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .card-footer{
     padding: 25px;
@@ -190,6 +206,7 @@ hr {
 .banner {
     position: relative;
     margin: 0;
+    overflow: auto;
 }
 
 .banner img
@@ -228,7 +245,14 @@ hr {
 /* ==================================================================================================== */
                                             /* RESEÑA  */
 /* ==================================================================================================== */
+@media (max-width: 400px) {
   .container-grid {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+  }
+}  
+
+.container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -251,7 +275,7 @@ hr {
 
   .card-resena img {
     width: 50%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -269,63 +293,108 @@ hr {
                                             /* CONTACT  */
 /* ==================================================================================================== */
 
-  @media (max-width: 768px){
-    .contact-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-          "left"
-          "right";
-        padding: 0 10px;
-    }
+
+@media (max-width: 400px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:  "subfoot"
+                          "form"
+                          "mapa";
+    font-size: 5px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 
-  @media only sreen and (max-width: 600px){
-    .contact-container {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
-    }
+  .formulario label {
+    display: block;
+    font-size: 0.5rem;
+    margin-bottom: 2px;
+    
+  }
+  .formulario input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
   }
 
-  @media (max-width: 400px) {
-    .container-grid {
-        grid-template-columns: 1fr;
+ 
+  }
+
+@media (max-width: 768px){
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: " subfoot    form" 
+                          " mapa    form";
         padding: 0 10px;
-    }
+        font-size: 12px;
+  }
+  iframe {
+    
+    width: 100%;
+    height: 100%;
+  }
+  .formulario label {
+    display: block;
+    font-size: 0.5rem;
+    margin-bottom: 2px;
+  }
 }
+  .card-contacto{
+    /* background-color: ; */
+    margin: 0 auto;
+  }
 
-.contact-container{
+  .contact-container {
+    display: grid;
+    grid-template: 200px 1fr/ 1fr 1fr;
+    grid-template-areas: " subfoot    form" 
+                         " mapa    form";
+    height: 100vh;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 3rem;
+    margin-top: 50px;
+  }
   
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
-  "left right";
-  grid-gap: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+  .subhead {
+    grid-area: subhead;
+    /* background-color: darkslategray; */
+  }
+  
+  .form {
+    grid-area: form;
+    /* background-color: gray; */
+  }
+  
+  .mapa {
+    grid-area: mapa;
+    /* background-color: darkgray; */
+  }
+  
+  .subfoot {
+    grid-area: subfoot;
+    /* background-color: darkolivegreen; */
+  }
+  
+  .item {
+    padding: 10px;
+    color: white;
+  }
 
-.left {
-  grid-area: left;
-}
-.rigth{
-  grid-area: right;
-}
-.right iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-.right iframe {
-  height: 300px; /* Ajusta la altura según sea necesario */
-}
+  .img-contact {
+    background-image: url(../img/contact.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.item {
-  padding: 20px;
-  margin: 5px;
-  margin-left: 10px;
-  align-items: center;
-}
 
 
 /* ==================================================================================================== */
@@ -337,3 +406,4 @@ hr {
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
+

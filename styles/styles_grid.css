@@ -1,0 +1,37 @@
+.container-formulario {
+    display: grid;
+    grid-template: 200px 1fr 1fr/ 400px 400px;
+    grid-template-areas: "subhead subhead" 
+                         "left contenido" 
+                         "left subfoot";
+    height: 100vh;
+    justify-content: center;
+}
+
+
+
+
+.subhead {
+    grid-area: subhead;
+    background-color: black;
+}
+
+.left {
+    grid-area: left;
+    background-color: gray;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: darkgray;
+}
+
+.subfoot {
+    grid-area: subfoot;
+    background-color: darkolivegreen;
+}
+
+.item {
+    padding: 10px;
+    color: white;
+}
