@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background: #181C14;
+    background: #D6E6F2;
     color: rgb(0, 0, 0);
 }
 
@@ -180,7 +180,7 @@ nav ul LI a:hover::after {
     align-items: center;
     font-size: 2rem;
     height: 100px;
-    background: linear-gradient(to right, #ECDFCC, #7a7278);
+    background: linear-gradient(to right, #F7FBFC, #D6E6F2);
 }
 
 /* ==================================================================================================== */
@@ -194,7 +194,7 @@ nav ul LI a:hover::after {
     padding: 3rem;
     gap: 5px;
     /* FONDO  */
-    background-color: #ffffff; 
+    background-color: #D6E6F2; 
    
   }
 
@@ -238,7 +238,7 @@ nav ul LI a:hover::after {
 /* ==================================================================================================== */
 
 #resena {
-    background-color: #ffffff;
+    background-color: #D6E6F2;
     background-attachment: fixed;
     background-size: contain;
     }
@@ -396,18 +396,25 @@ form .btn-submit {
 /* ==================================================================================================== */
                                           /* FOOTER  */
 /* ==================================================================================================== */
+footer {
+    background-color: #769FCD;
+}
+
 .footer-container {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding-left: 20%;
+    padding-left: 10%;
     margin-top: auto;
     margin-bottom: auto;
+    height: 300px;
+
 }
 .card-footer{
     padding: 25px;
-    width: 250px;
     margin: 5px;
     margin-left: 10px;
 }
