@@ -385,7 +385,7 @@ hr {
   
 }
 .banner2 .card {
-               background-color: #BDE4B0;
+               background-color: #697565;
                padding: 0 auto;
                margin: 0 auto;
                width: 350px;
@@ -393,7 +393,7 @@ hr {
 }
 
 .card-button {
-  background-color: #30242d;
+  background-color: #ECDFCC;
   color: white;
   padding: 15px 30px; /* Aumenta el tamaño del botón */
   border: none;
@@ -408,7 +408,7 @@ hr {
 .banner2 .card:hover {
                 transform: translateY(-5px);
                 background-color: #89a77a;
-                border-color: #f2b139;
+                border-color: #ECDFCC;
 }
 
 .img-banner2 {
