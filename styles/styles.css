@@ -1,14 +1,15 @@
 /* styles.css */
-
+/* PALETA COLORES */
+/* https://www.colorhunt.co/palette/181c143c3d37697565ecdfcc */
 
 /* ==================================================================================================== */
                                               /* CSS RESET  */
 /* ==================================================================================================== */
 
 * {
-  font-family: "Itim", cursive;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -65,10 +66,12 @@ ul {
 
 
  .nav-logo {
-   width: 50px;
-   height: 50px;
+   width: 30%;
+   height: 30%;
    align-items: center;
    justify-content: left;
+   margin-top: 10px;
+   margin-left: 10px;
 }
 
  .nav-icons {
@@ -95,17 +98,24 @@ h1 {
 
 /* Estilos para el modo oscuro */
 body {
-    background-color: #30262b;
+  background-color: #3C3D37;
+  background-attachment: fixed;
+  background-size: cover;
     color: #ffffff;
 }
 
 header {
-    background-color: #30262b;
+    background-color: #181C14;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
+ 
 }
 
+footer{
+  background-color: #181C14;
+}
 
 hr {
   border: 1px solid #ccc;
@@ -205,6 +215,10 @@ hr {
 /* ==================================================================================================== */
                                               /* CARDS  */
 /* ==================================================================================================== */
+#productos {
+  background-color: #3C3D37;
+}
+
 .container {
   display: inline-flex;
   flex-wrap: wrap;
@@ -214,7 +228,19 @@ hr {
   margin-top: 200px;
   margin-bottom: 200px;
   
+  /* FONDO  */
+  background-color: #3C3D37;
+ 
+
+  
+
 }
+
+.container__pages-area {
+  padding: 6.5rem 0rem;
+  
+}
+
 
 .card {
     /* background-color: ; */
@@ -251,8 +277,8 @@ hr {
     align-items: center;
     font-size: 2rem;
     height: 100px;
-    background: linear-gradient(to right, #d8b0cc, #7a7278);
-    margin-top: 50px;
+    background: linear-gradient(to right, #ECDFCC, #7a7278);
+    margin-top: 0px;
 }
 /* ==================================================================================================== */
                                           /* FOOTER  */
@@ -325,6 +351,8 @@ hr {
                                               /* BANNER2  */
 /* ==================================================================================================== */
 
+
+
 @media (max-width: 480px){
 
   .banner2 .card  img {
@@ -354,6 +382,7 @@ hr {
   margin: 20px auto;
   margin-top: 200px;
   margin-bottom: 200px;
+  
 }
 .banner2 .card {
                background-color: #BDE4B0;
@@ -399,6 +428,13 @@ hr {
 /* ==================================================================================================== */
                                             /* RESEÑA  */
 /* ==================================================================================================== */
+
+#resena {
+background-color: #3C3D37;
+background-attachment: fixed;
+background-size: contain;
+}
+
 @media (max-width: 400px) {
   .container-grid {
       grid-template-columns: 1fr;
@@ -446,6 +482,11 @@ hr {
 /* ==================================================================================================== */
                                             /* CONTACT  */
 /* ==================================================================================================== */
+
+#contacto {
+  background-color: #3C3D37;
+
+}
 
 
 @media (max-width: 400px) {
