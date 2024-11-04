@@ -114,7 +114,7 @@ header {
 }
 
 footer{
-  background-color: #181C14;
+  background-color: #212529;
 }
 
 hr {
@@ -220,53 +220,50 @@ hr {
 }
 
 .container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "card card card";
+  padding: 3rem;
+  gap: 5px;
   /* FONDO  */
   background-color: #3C3D37;
- 
 
-  
-
-}
-
-.container__pages-area {
-  padding: 6.5rem 0rem;
-  
 }
 
 
 .card {
     /* background-color: ; */
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 25px;
-    width: 250px;
-    margin: 5px;
-    margin-left: 10px;
-    align-items: center;
+    width: 450px;
+    padding: 15px;
   }
-  
+  .card h2 {
+    text-align: left;
+  }
   .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
+  .card p {
+    text-align: left;
+  }
   .card a {
     color:beige;
     text-decoration: none;
+    align-self: flex-end;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
   }
 
-  .card:hover {
+  .card a:hover {
     border-color: #ECDFCC;
-    transform: translateY(-5px);
+    background-color: #f2b139;
   }
 /* ==================================================================================================== */
                                         /* SECCION TITLE  */
