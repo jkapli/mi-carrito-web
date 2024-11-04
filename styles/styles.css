@@ -263,7 +263,7 @@ hr {
 
   .card a:hover {
     border-color: #ECDFCC;
-    background-color: #f2b139;
+    transform: translateY(-5px);
   }
 /* ==================================================================================================== */
                                         /* SECCION TITLE  */
