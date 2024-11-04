@@ -7,7 +7,7 @@
 /* ==================================================================================================== */
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -30,39 +30,40 @@
   }
 }
 
-ul {
-  list-style: none;
-  text-decoration: none;
-  text-align: center;
-  nav {
-    padding: 20px;
- }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
- nav ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: center;
- }
- 
- nav li {
-   margin: 0 10px;
- }
- 
- nav a {
-   text-decoration: none;
-   color: #e3eef1;
-   font-size: 1em;
- }
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
 
- nav a:hover {
-   transform: translateY(-5px);
-   color: #f2711c;
-   border-color: #f2b139;
- }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
 
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #EBEAB4;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul LI a:hover::after {
+  width: 100%;
+}
 
 
  .nav-logo {
@@ -142,7 +143,25 @@ hr {
                                               /* HEADER SECTION  */
 /* ==================================================================================================== */
 
+.header-section {
+  width: 100%;
+  height: 2000px;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/background/bg-accesories.jpg);
+  position: relative;
+}
 
+.header-text h1{
+  font-size: 75px;
+  margin-top: 20%;
+  color: white;
+}
+
+.header-text p {
+  margin: 20px 0;
+  font-size: 20px;
+}
 
 
 
@@ -271,7 +290,7 @@ hr {
 
   .card a:hover {
     border-color: #ECDFCC;
-    transform: translateY(-5px);
+    background-color: #f2b139;
   }
 /* ==================================================================================================== */
                                         /* SECCION TITLE  */
