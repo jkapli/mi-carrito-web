@@ -1,3 +1,25 @@
+/* 
+768px
+-----
+-----
+-----
+-----
+-----
+-----
+-----
+
+max widht 480px
+
+-----
+-----
+-----
+-----
+-----
+-----
+-----
+----- */
+
+
 /* ==================================================================================================== */
                                               /* GLOBAL  */
 /* ==================================================================================================== */
@@ -101,6 +123,7 @@ nav ul LI a:hover::after {
 .header-text p {
     margin: 20px 0;
     font-size: 20px;
+    color: white;
 }
 
 /* ==================================================================================================== */
@@ -176,11 +199,13 @@ nav ul LI a:hover::after {
 /* ==================================================================================================== */
 .section-title {
     text-align: center;
-    padding-top: 0.5em;
+    align-items: center;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
-    height: 100px;
-    background: linear-gradient(to right, #F7FBFC, #D6E6F2);
+    height: 4.5rem;
+    /* background: linear-gradient(to right, #F7FBFC, #D6E6F2); */
+    background-color: #769FCD;
 }
 
 /* ==================================================================================================== */
@@ -191,11 +216,10 @@ nav ul LI a:hover::after {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "card card card";
-    padding: 3rem;
-    gap: 5px;
+    padding: 5rem;
+    gap: 2px;
     /* FONDO  */
-    background-color: #D6E6F2; 
-   
+    background-color: #ffffff; 
   }
 
   .card-prod {
@@ -205,22 +229,23 @@ nav ul LI a:hover::after {
       border: 1px solid #ccc;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      width: 450px;
-      padding: 15px;
+      width: 440px;
+      padding: 10px;
     }
     .card-prod h2 {
       text-align: left;
+      font-weight: 200;
     }
     .card-prod img {
-      width: 100%;
-      height: 200px;
+      width: 400px;
+      height: 320px;
       object-fit: cover;
     }
     .card-prod p {
       text-align: left;
     }
     .card-prod a {
-      color:beige;
+      color:rgb(0, 0, 0);
       text-decoration: none;
       align-self: flex-end;
       border: 2px solid #ccc;
