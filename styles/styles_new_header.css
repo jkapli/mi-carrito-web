@@ -352,16 +352,30 @@ nav ul LI a:hover::after {
 /* ==================================================================================================== */
 
 #resena {
-    background-color: #ffffff;
+    background: linear-gradient(to top, #8ebccc, rgba(255, 255, 255, 0.1));
+    height: 100vh;
+    border-radius: 20px;
     
     }
     
-    @media (max-width: 400px) {
+@media (max-width: 478px) {
       .container-grid {
           grid-template-columns: 1fr;
           padding: 0 10px;
+          margin-top: 300px !important;
       }
-    }  
+    .card-resena{
+        width: 70% !important;
+        font-size: 10px !important;
+        }
+
+    .card-resena img {
+        width: 20% !important;
+        height: 100px !important;
+       
+      }
+}
+      
     
     .container-grid {
         display: grid;
@@ -376,15 +390,17 @@ nav ul LI a:hover::after {
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         padding: 10px;
-        width: 100%;
+        width: 70%;
         margin: 0 auto;
         align-items: center;
+        font-size: 10px;
+        background-color: #E9F1FA;
     
       }
     
       .card-resena img {
-        width: 50%;
-        height: 200px;
+        width: 20%;
+        height: 100px;
         object-fit: cover;
         border-radius: 50%;
         display: block;
@@ -494,7 +510,7 @@ form .btn-submit {
 }
 
 footer {
-    background-color: #769FCD;
+    background-color: #eeeeee;
 }
 
 .footer-container {
